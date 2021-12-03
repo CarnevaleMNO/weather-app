@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 4rem;
+    height: auto;
+    width: 100%;
+    background-color: #184e77;
+    color: #d9ed92;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+.search-form {
+    display: flex;
+}
+
+@media(max-width: 559px){
+    header h1 {
+        display: none;
+    }
+    #search-label {
+        display: none;
+    }
+}
+
+#search-label {
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+#search-input {
+    padding: .15rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: #b5e48c;
+    border-radius: 2px;
+}
+
+/* Weather display */
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-title {
+    font-size: 3rem;
+}
+
+.max-temp {
+    font-size: .8rem;
+}
+
+.current-temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.min-temp {
+    font-size: .8rem;
+}
+
+/* Hourly display */
+
+.hourly-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hourly-data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.hourly-bottom {
+    text-align: center;
+}
